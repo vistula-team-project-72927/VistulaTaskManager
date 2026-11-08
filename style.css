@@ -1,0 +1,148 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f6f9;
+    margin: 0;
+    padding: 30px 15px;
+    color: #222;
+}
+
+.container {
+    max-width: 750px;
+    margin: 0 auto;
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+header h1 {
+    color: #263b80;
+    font-size: 32px;
+}
+
+header p {
+    color: #666;
+}
+
+section {
+    margin-bottom: 30px;
+}
+
+h2 {
+    color: #263b80;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+input, textarea {
+    padding: 13px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 15px;
+    font-family: Arial, sans-serif;
+}
+
+textarea {
+    min-height: 90px;
+    resize: vertical;
+}
+
+button {
+    padding: 11px 16px;
+    border: none;
+    border-radius: 6px;
+    background: #263b80;
+    color: white;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+button:hover {
+    opacity: 0.85;
+}
+
+.task-item {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 18px;
+    margin-bottom: 15px;
+    background: #fff;
+}
+
+.task-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.task-description {
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.task-status {
+    font-size: 13px;
+    margin-bottom: 12px;
+    color: #555;
+}
+
+.task-item.completed {
+    background: #f0f8f1;
+}
+
+.task-item.completed .task-title {
+    text-decoration: line-through;
+    color: #777;
+}
+
+.task-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.edit-task {
+    background: #d18b16;
+}
+
+.delete-task {
+    background: #c0392b;
+}
+
+.toggle-task {
+    background: #27834b;
+}
+
+#status-message {
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+#contribution-link {
+    display: inline-block;
+    margin-top: 15px;
+    color: #263b80;
+}
+
+@media (max-width: 600px) {
+    .container {
+        padding: 20px;
+    }
+
+    .task-actions button {
+        flex: 1;
+    }
+}

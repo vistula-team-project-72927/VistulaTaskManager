@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Manager</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <header>
+        <h1>Task Manager</h1>
+        <p>Vistula Student ID: <span id="student-id">72927</span></p>
+    </header>
+
+    <main>
+        <section class="task-form-section">
+            <h2>Add or Edit Task</h2>
+
+            <form id="task-form">
+                <input
+                        type="text"
+                        id="task-title"
+                        placeholder="Enter task title"
+                        required
+                >
+
+                <textarea
+                        id="task-description"
+                        placeholder="Enter task description"
+                ></textarea>
+
+                <button type="submit" id="task-submit">
+                    Add Task
+                </button>
+            </form>
+        </section>
+
+        <section class="tasks-section">
+            <h2>My Tasks</h2>
+            <div id="task-list"></div>
+        </section>
+
+        <p id="status-message" role="status"></p>
+
+        <a href="contribution.html" id="contribution-link">
+            View Team Contribution
+        </a>
+    </main>
+
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
